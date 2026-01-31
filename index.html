@@ -21,10 +21,6 @@ Categorie 11 – Een permanente ban + accountwipe.
 <title>Sanctie Categorieën</title>
 
 <style>
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     min-height: 100vh;
@@ -35,111 +31,37 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #fff;
+    font-family: Arial, sans-serif;
+    color: white;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-/* Dark overlay */
-.container {
-    width: 100%;
-    max-width: 950px;
-    background: linear-gradient(
-        180deg,
-        rgba(0,0,0,0.85),
-        rgba(0,0,0,0.7)
-    );
     padding: 30px;
-    border-radius: 18px;
-    border: 2px solid rgba(255, 200, 0, 0.35);
-    box-shadow: 0 0 40px rgba(255, 200, 0, 0.15);
 }
 
-/* Title */
-.container h1 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 30px;
-    letter-spacing: 1px;
-    color: #ffd24d;
-    text-shadow: 0 0 12px rgba(255, 210, 77, 0.6);
-}
-
-/* List */
-.ban-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.ban-list li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    padding: 14px 16px;
-    margin-bottom: 10px;
-
-    background: rgba(255,255,255,0.05);
-    border-left: 5px solid #ffd24d;
+/* subtiele tekstachtergrond voor leesbaarheid */
+.content {
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 20px;
     border-radius: 10px;
+}
 
+/* titel */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffd24d;
+    text-shadow: 0 0 8px rgba(255, 210, 77, 0.6);
+}
+
+/* tekst */
+p {
     font-size: 18px;
+    line-height: 1.7;
 }
 
-/* Category badge */
-.badge {
-    min-width: 38px;
-    height: 38px;
-    background: #ffd24d;
-    color: #000;
-    font-weight: bold;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255,210,77,0.6);
-}
-
-/* Warning style */
-.warning {
-    border-left-color: #4dd2ff;
-}
-
-.warning .badge {
-    background: #4dd2ff;
-    box-shadow: 0 0 10px rgba(77,210,255,0.6);
-}
-
-/* Permanent ban */
-.perma {
-    border-left-color: #ff4d4d;
-}
-
-.perma .badge {
-    background: #ff4d4d;
-    box-shadow: 0 0 10px rgba(255,77,77,0.6);
-}
-
-/* Mobile */
 @media (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
-
-    .container h1 {
-        font-size: 24px;
-    }
-
-    .ban-list li {
+    p {
         font-size: 16px;
-        padding: 12px;
     }
 }
 </style>
@@ -147,24 +69,24 @@ body {
 
 <body>
 
-<div class="container">
+<div class="content">
     <h1>Sanctie Categorieën</h1>
 
-    <ul class="ban-list">
-        <li class="warning"><div class="badge">1</div>Waarschuwing + 50 taken</li>
-        <li class="warning"><div class="badge">2</div>Waarschuwing + 100 taken</li>
-        <li class="warning"><div class="badge">3</div>Waarschuwing + 125 taken</li>
-        <li class="warning"><div class="badge">4</div>Waarschuwing + 150 taken</li>
-        <li class="warning"><div class="badge">5</div>Waarschuwing + 250 taken</li>
+    <p>
+        Categorie 1 – Waarschuwing + 50 taken.<br>
+        Categorie 2 – Waarschuwing + 100 taken.<br>
+        Categorie 3 – Waarschuwing + 125 taken.<br>
+        Categorie 4 – Waarschuwing + 150 taken.<br>
+        Categorie 5 – Waarschuwing + 250 taken.<br><br>
 
-        <li><div class="badge">6</div>24 uur ban + 50 taken</li>
-        <li><div class="badge">7</div>3 dagen ban + 100 taken</li>
-        <li><div class="badge">8</div>2 weken ban + 125 taken</li>
-        <li><div class="badge">9</div>1 maand ban + 250 taken</li>
+        Categorie 6 – 24 uur ban + 50 taken.<br>
+        Categorie 7 – 3 dagen ban + 100 taken.<br>
+        Categorie 8 – 2 weken ban + 125 taken.<br>
+        Categorie 9 – 1 maand ban + 250 taken.<br><br>
 
-        <li class="perma"><div class="badge">10</div>Permanente ban</li>
-        <li class="perma"><div class="badge">11</div>Permanente ban + accountwipe</li>
-    </ul>
+        Categorie 10 – Permanente ban.<br>
+        Categorie 11 – Permanente ban + accountwipe.
+    </p>
 </div>
 
 </body>

@@ -43,3 +43,76 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+
+/* Donkere overlay box */
+.container {
+    width: 100%;
+    max-width: 900px;
+
+    background: rgba(0, 0, 0, 0.78);
+    backdrop-filter: blur(2px);
+
+    padding: 25px;
+    border-radius: 14px;
+}
+
+/* Titel */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Lijst */
+.ban-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ban-list li {
+    padding: 12px 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    font-size: 18px;
+}
+
+.ban-list li:last-child {
+    border-bottom: none;
+}
+
+/* Mobiel optimalisatie */
+@media (max-width: 600px) {
+    .container {
+        padding: 18px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+
+    .ban-list li {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Ban Categorieën</h1>
+
+    <ul class="ban-list">
+        <li>Categorie 6 – 24 uur ban + 250 taken</li>
+        <li>Categorie 7 – 3 dagen ban + 300 taken</li>
+        <li>Categorie 8 – 2 weken ban + 400 taken</li>
+        <li>Categorie 9 – 1 maand ban + 450 taken</li>
+        <li>Categorie 10 – Permanente ban</li>
+        <li>Categorie 11 – Permanente ban + accountwipe</li>
+    </ul>
+</div>
+
+</body>
+</html>

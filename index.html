@@ -21,11 +21,15 @@ Categorie 11 – Een permanente ban + accountwipe.
 <title>Sanctie Categorieën</title>
 
 <style>
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     margin: 0;
-    min-height: 100vh;
 
-    background: 
+    background:
         linear-gradient(
             rgba(0,0,0,0.55),
             rgba(0,0,0,0.55)
@@ -43,6 +47,20 @@ body {
     padding: 30px;
 }
 
+/* Bovenste Discord titel */
+.discord {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #000;
+    background: rgba(255,255,255,0.85);
+    padding: 12px 20px;
+    border-radius: 12px;
+    max-width: 420px;
+    margin: 0 auto 25px auto;
+}
+
+/* Sanctie titel */
 h1 {
     text-align: center;
     margin-bottom: 25px;
@@ -58,6 +76,11 @@ h1 {
 }
 
 @media (max-width: 600px) {
+    .discord {
+        font-size: 26px;
+        padding: 10px;
+    }
+
     .content {
         font-size: 16px;
     }
@@ -66,6 +89,8 @@ h1 {
 </head>
 
 <body>
+
+<div class="discord">DISCORD.GG/OASRP</div>
 
 <h1>Sanctie Categorieën</h1>
 
